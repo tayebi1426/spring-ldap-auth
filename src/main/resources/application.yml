@@ -1,0 +1,11 @@
+server:
+  port: 8007
+
+app:
+  ldap:
+    provider-url: ldap://rep.gandou.iic.local:389/dc=gandou,dc=iic,dc=local
+    user-dn-patterns: uid={0},ou=People
+logging:
+  level:
+    root: WARN
+    org.springframework.security: TRACE
