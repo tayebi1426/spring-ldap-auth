@@ -4,7 +4,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 
-@SpringBootApplication()
+@SpringBootApplication(scanBasePackages = "com.demo.oldap")
 @EnableWebMvc
 public class LdapAuthApplication {
 

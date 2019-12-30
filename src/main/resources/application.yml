@@ -1,8 +1,9 @@
 server:
-  port: 8007
+  port: 8008
 
 app:
-  ldap:
+  auth-ldap:
+    public-path: /public/**
     provider-url: ldap://rep.gandou.iic.local:389/dc=gandou,dc=iic,dc=local
     user-dn-patterns: uid={0},ou=People
 logging:
